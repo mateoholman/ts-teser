@@ -6,9 +6,6 @@ export interface Props {
     onIncrement?: () => void;
     onDecrement?: () => void;
 }
-interface State {
-    currentEnthusiasm: number;
-}
 
 function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
     if (enthusiasmLevel <= 0) {
